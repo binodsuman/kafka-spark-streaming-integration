@@ -7,17 +7,17 @@ scratch with Kafka Spark Streaming Integration.
 Kafka Spark Streaming Integration in java from scratch | Code walk through. https://youtu.be/UcWi3-FODjs
 
 There are two Maven Project:
-1. kafka
-2. Spark
+1. kafka  
+2. Spark  
 
-One input file is there tet.csv 
+One input file is there tet.csv   
 
 Before starting executing these code, you have should have already:
-1. Kafka server running
-2. Kafka Topic (demo) shoud be created.
+1. Kafka server running  
+2. Kafka Topic (demo) shoud be created.  
 3. kafka producer and consumer console started for testing purpose.
 
-These YouTube Video will help you to undertand better Kafka, Spark and setup.
+These YouTube Video will help you to undertand better Kafka, Spark and setup.  
 
 Kakfa Installation 
 https://youtu.be/D7IY_CwXUKc
@@ -39,29 +39,29 @@ Spark Introduction
 https://youtu.be/cfiXvwnCz3E
 
 
------ Some Useful Kafka Commands --------
-Start Zookeeper
-zookeeper-server-start.sh config\zookeeper.properties
-
-Start Kafka Broker
-kafka-server-start.sh config/server.properties
-
-Create topic
-kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test
-
-List topic
-kafka-topics.sh --list --zookeeper localhost:2181
-
-Start Producer
-kafka-console-producer.sh --broker-list localhost:9092 --topic test
-
-Send message
-How are you
-Binod Suman Academy
-
-Receive message
->bin\wndows\kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test --from-beginning
-How are you
-Binod Suman Academy
+----- Some Useful Kafka Commands --------<br/>
+Start Zookeeper<br/>
+zookeeper-server-start.sh config\zookeeper.properties<br/>
+<br/>
+Start Kafka Broker<br/>
+kafka-server-start.sh config/server.properties<br/>
+<br/>
+Create topic<br/>
+kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test<br/>
+<br/>
+List topic<br/>
+kafka-topics.sh --list --zookeeper localhost:2181<br/>
+<br/>
+Start Producer<br/>
+kafka-console-producer.sh --broker-list localhost:9092 --topic test<br/>
+<br/>
+Send message<br/>
+How are you<br/>
+Binod Suman Academy<br/>
+<br/>
+Receive message<br/>
+kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test --from-beginning<br/>
+How are you<br/>
+Binod Suman Academy<br/>
 
 
