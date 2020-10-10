@@ -47,20 +47,20 @@ Start Kafka Broker<br/>
 kafka-server-start.sh config/server.properties<br/>
 <br/>
 Create topic<br/>
-kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test<br/>
+kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic demo<br/>
 <br/>
 List topic<br/>
 kafka-topics.sh --list --zookeeper localhost:2181<br/>
 <br/>
 Start Producer<br/>
-kafka-console-producer.sh --broker-list localhost:9092 --topic test<br/>
+kafka-console-producer.sh --broker-list localhost:9092 --topic demo<br/>
 <br/>
 Send message<br/>
 How are you<br/>
 Binod Suman Academy<br/>
 <br/>
 Receive message<br/>
-kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test --from-beginning<br/>
+kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic demo --from-beginning<br/>
 How are you<br/>
 Binod Suman Academy<br/>
 
