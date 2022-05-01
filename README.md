@@ -48,9 +48,12 @@ kafka-server-start.sh config/server.properties<br/>
 <br/>
 Create topic<br/>
 kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test<br/>
+Newer versions(2.2+) of Kafka no longer requires ZooKeeper connection string
+./kafka-topics.sh --create --topic test --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 <br>
 <br/>
 List topic<br/>
 kafka-topics.sh --list --zookeeper localhost:2181<br/>
+ ./kafka-topics.sh --list --bootstrap-server localhost:9092<br>
 <br/>
 Start Producer<br/>
 kafka-console-producer.sh --broker-list localhost:9092 --topic test<br/>
